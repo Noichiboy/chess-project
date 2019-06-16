@@ -5,7 +5,7 @@ public abstract class ChessPiece {
     private final PieceColor color;
     private final Move[] moves;
     private final String name;
-    private final char charValue;
+    private char charValue;
     private final boolean repeatableMoves;
 
     public ChessPiece(PieceType type, PieceColor color, Move[] moves, boolean repeatableMoves){
@@ -30,7 +30,46 @@ public abstract class ChessPiece {
 
     public PieceColor getColor(){ return color; }
 
-    public char getCharValue(){ return charValue; }
+    public char getCharValue(){
+        if (charValue == 'P'){
+            if (color == PieceColor.White) {
+                charValue = '\u2654';
+            } else {
+                charValue = '\u265A';
+            }
+        }
+        else if (charValue == 'T'){
+            if (color == PieceColor.White) {
+                charValue = '\u2656';
+            } else {
+                charValue = '\u265C';
+            }
+        } else if (charValue == 'C') {
+            if (color == PieceColor.White) {
+                charValue = '\u2658';
+            } else {
+                charValue = '\u265E';
+            }
+        } else if (charValue == 'F') {
+            if (color == PieceColor.White) {
+                charValue = '\u2657';
+            } else {
+                charValue = '\u265D';
+            }
+        } else if (charValue == 'Q') {
+            if (color == PieceColor.White) {
+                charValue = '\u2655';
+            } else {
+                charValue = '\u265B';
+            }
+        } else if (charValue == 'R') {
+            if (color == PieceColor.White) {
+                charValue = '\u2654';
+            } else {
+                charValue = '\u265A';
+            }
+        }
+        return charValue; }
 
     public boolean hasRepeatableMoves(){ return repeatableMoves; }
 
