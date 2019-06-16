@@ -3,10 +3,10 @@ package Chess.Pieces;
 import Chess.ChessPiece;
 import Chess.Move;
 
-public class Bishop extends ChessPiece {
+public class Fou extends ChessPiece {
 
-	public Bishop(PieceColor color){
-		super(PieceType.Bishop, color, validMoves(), true);
+	public Fou(PieceColor color) {
+		super(PieceType.Fou, color, validMoves(), true);
 	}
 
 

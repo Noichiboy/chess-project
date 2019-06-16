@@ -3,10 +3,10 @@ package Chess.Pieces;
 import Chess.ChessPiece;
 import Chess.Move;
 
-public class Pawn extends ChessPiece {
+public class Pion extends ChessPiece {
 
-	public Pawn(PieceColor color){
-		super(PieceType.Pawn, color, validMoves(color), false);
+    public Pion(PieceColor color) {
+		super(PieceType.Pion, color, validMoves(color), false);
 	}
 
 	private static Move[] validMoves(PieceColor color){

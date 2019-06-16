@@ -3,10 +3,10 @@ package Chess.Pieces;
 import Chess.ChessPiece;
 import Chess.Move;
 
-public class Knight extends ChessPiece{
+public class Cavalier extends ChessPiece {
 
-	public Knight(ChessPiece.PieceColor color){
-		super(PieceType.Knight, color, validMoves(), false);
+	public Cavalier(ChessPiece.PieceColor color) {
+		super(PieceType.Cavalier, color, validMoves(), false);
 	}
 
 

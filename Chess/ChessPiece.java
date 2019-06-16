@@ -8,7 +8,7 @@ public abstract class ChessPiece {
     private final char charValue;
     private final boolean repeatableMoves;
 
-    protected ChessPiece(PieceType type, PieceColor color, Move[] moves, boolean repeatableMoves){
+    public ChessPiece(PieceType type, PieceColor color, Move[] moves, boolean repeatableMoves){
         this.type = type;
         this.color = color;
         this.moves = moves;
@@ -16,9 +16,9 @@ public abstract class ChessPiece {
         name = type.name();
         charValue = type.name().trim().charAt(0);
     }
-
+    //Reine appelée Queen pour la différencier du Roi
     public enum PieceType {
-        Pawn, Rook, Knight, Bishop, Queen, King
+        Pion, Tour, Cavalier, Fou, Queen, Roi
     }
 
     public enum PieceColor {
