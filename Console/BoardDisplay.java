@@ -5,16 +5,16 @@ import Chess.Tile;
 
 public class BoardDisplay {
 
-    public static void printBoard(ChessBoard board){
+    public static void printBoard(ChessBoard board) {
         clearConsole();
-        Tile[][] b = board.getBoardArray();
+        Tile[][] b = board.getBoardArray(); // à utiliser pour save /!\
 
         System.out.print('\n');
         System.out.println("      [A][B][C][D][E][F][G][H] \n");
-        for(int i = 0; i < 8; i++) {
+        for (int i = 0; i < 8; i++) {
             System.out.print("[" + (8 - i) + "]   ");
 
-            for (int j = 0; j < 8; j++){
+            for (int j = 0; j < 8; j++) {
                 System.out.print(b[i][j].getValue());
             }
 
@@ -23,6 +23,8 @@ public class BoardDisplay {
 
         System.out.println("\n      [A][B][C][D][E][F][G][H]\n");
     }
+
+
 
     // Clear console sous windows ou unix
     public static void clearConsole(){

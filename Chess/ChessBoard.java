@@ -13,6 +13,7 @@ public class ChessBoard {
         fillBoard();
     }
 
+
     public Tile[][] getBoardArray(){
         return board;
     }
@@ -92,4 +93,9 @@ public class ChessBoard {
         board[0][4].setPiece(new Roi(ChessPiece.PieceColor.Black));
         board[7][4].setPiece(new Roi(ChessPiece.PieceColor.White));
     }
+
+    /*private void fillBoardLoaded(ChessBoard ){
+
+
+    }*/
 }

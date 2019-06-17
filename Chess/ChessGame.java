@@ -287,4 +287,9 @@ public class ChessGame {
                 : from.Y() == 1;
         }
     }
+
+    // Le pion peut être promu
+    /*public boolean isLastMoveForPawn(Tuple from, ChessBoard board) {
+        
+    }*/
 }

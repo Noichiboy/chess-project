@@ -31,11 +31,11 @@ public abstract class ChessPiece {
     public PieceColor getColor(){ return color; }
 
     public char getCharValue(){
-        if (charValue == 'P'){
+        /*if (charValue == 'P'){
             if (color == PieceColor.White) {
-                charValue = '\u2654';
+                charValue = '\u2659';
             } else {
-                charValue = '\u265A';
+                charValue = '\u265F';
             }
         }
         else if (charValue == 'T'){
@@ -68,7 +68,7 @@ public abstract class ChessPiece {
             } else {
                 charValue = '\u265A';
             }
-        }
+        }*/
         return charValue; }
 
     public boolean hasRepeatableMoves(){ return repeatableMoves; }
